@@ -1,0 +1,8 @@
+version: "3.4"
+services:
+    web:
+        build: .
+        ports: 
+            - 8080:8080
+        volumes: 
+            - ./codecomp-backend:/$GOPATH/src/codecomp-backend
